@@ -36,12 +36,11 @@ const ContactPage = () => {
           </div>
         </Col>
         <Col xs={12} md={7} className="ml-5">
-          <form
+          <Form
+            name="contact v1"
             method="post"
-            name="contact"
             data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            data-netlify-recaptcha="true"
+            onSubmit="submit"
             // onSubmit={e => {
             //   e.preventDefault()
             //   const user = { name, email, message }
@@ -103,7 +102,7 @@ const ContactPage = () => {
             <Button className="btn btn-dark" type="submit">
               Submit
             </Button>
-          </form>
+          </Form>
         </Col>
       </Row>
     </Layout>
