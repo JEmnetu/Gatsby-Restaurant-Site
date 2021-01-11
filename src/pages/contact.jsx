@@ -40,21 +40,22 @@ const ContactPage = () => {
             action="POST"
             data-netlify="true"
             className=""
-            onSubmit={e => {
-              e.preventDefault()
-              const user = { name, email, message }
-              setSubmission(user)
-              console.log(submission)
-              setName("")
-              setEmail("")
-              setMessage("")
-            }}
+            // onSubmit={e => {
+            //   e.preventDefault()
+            //   const user = { name, email, message }
+            //   setSubmission(user)
+            //   console.log(submission)
+            //   setName("")
+            //   setEmail("")
+            //   setMessage("")
+            // }}
           >
             <Form.Group>
               <Form.Label>Name</Form.Label>
               <Form.Control
                 type="text"
                 name="name"
+                id="name"
                 value={name}
                 required
                 onChange={e => {
@@ -69,6 +70,7 @@ const ContactPage = () => {
               <Form.Control
                 type="email"
                 name="email"
+                id="email"
                 value={email}
                 required
                 onChange={e => {
@@ -88,8 +90,13 @@ const ContactPage = () => {
                 as="textarea"
                 required
                 rows={3}
+                name="message"
+                id="message"
               />
             </Form.Group>
+            <div className="field">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
 
             <Button className="btn btn-dark" type="submit">
               Submit
