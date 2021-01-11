@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Col, Row, Form, Button } from "react-bootstrap"
+import { Col, Row, Form, Button, FormGroup } from "react-bootstrap"
 
 const ContactPage = () => {
   const [name, setName] = useState("")
@@ -37,9 +37,11 @@ const ContactPage = () => {
         </Col>
         <Col xs={12} md={7} className="ml-5">
           <form
-            method="POST"
+            method="post"
+            name="contact"
             data-netlify="true"
-
+            data-netlify-honeypot="bot-field"
+            data-netlify-recaptcha="true"
             // onSubmit={e => {
             //   e.preventDefault()
             //   const user = { name, email, message }
@@ -50,7 +52,6 @@ const ContactPage = () => {
             //   setMessage("")
             // }}
           >
-            <input type="hidden" name="form-name" value="contact" />
             <Form.Group>
               <Form.Label>Name</Form.Label>
               <Form.Control
@@ -95,9 +96,9 @@ const ContactPage = () => {
                 id="message"
               />
             </Form.Group>
-            <div className="field">
+            <FormGroup>
               <div data-netlify-recaptcha="true"></div>
-            </div>
+            </FormGroup>
 
             <Button className="btn btn-dark" type="submit">
               Submit
