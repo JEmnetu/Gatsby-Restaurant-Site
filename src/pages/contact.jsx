@@ -50,6 +50,7 @@ const ContactPage = () => {
             //   setMessage("")
             // }}
           >
+            <input type="hidden" name="form-name" value="contact" />
             <Form.Group>
               <Form.Label>Name</Form.Label>
               <Form.Control
