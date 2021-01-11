@@ -51,17 +51,14 @@ const ContactPage = () => {
             //   setMessage("")
             // }}
           >
+            <input type="hidden" name="form-name" value="contact v1" />
             <Form.Group>
               <Form.Label>Name</Form.Label>
               <Form.Control
                 type="text"
                 name="name"
                 id="name"
-                value={name}
                 required
-                onChange={e => {
-                  setName(e.target.value)
-                }}
                 placeholder="Enter your name"
               />
             </Form.Group>
@@ -72,11 +69,7 @@ const ContactPage = () => {
                 type="email"
                 name="email"
                 id="email"
-                value={email}
                 required
-                onChange={e => {
-                  setEmail(e.target.value)
-                }}
                 placeholder="Enter your email address"
               />
             </Form.Group>
@@ -84,10 +77,6 @@ const ContactPage = () => {
             <Form.Group>
               <Form.Label>Message</Form.Label>
               <Form.Control
-                value={message}
-                onChange={e => {
-                  setMessage(e.target.value)
-                }}
                 as="textarea"
                 required
                 rows={3}
