@@ -36,10 +36,10 @@ const ContactPage = () => {
           </div>
         </Col>
         <Col xs={12} md={7} className="ml-5">
-          <Form
-            action="POST"
+          <form
+            method="POST"
             data-netlify="true"
-            className=""
+
             // onSubmit={e => {
             //   e.preventDefault()
             //   const user = { name, email, message }
@@ -101,7 +101,7 @@ const ContactPage = () => {
             <Button className="btn btn-dark" type="submit">
               Submit
             </Button>
-          </Form>
+          </form>
         </Col>
       </Row>
     </Layout>
