@@ -45,7 +45,7 @@ const ContactPage = () => {
             name="contact v1"
             method="post"
             data-netlify="true"
-            data-netlify-recaptcha="true"
+            onSubmit="submit"
           >
             <input type="hidden" name="form-name" value="contact v1" />
             <Form.Group>
