@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -6,54 +6,50 @@ import SEO from "../components/seo"
 import { Col, Row, Form, Button, FormGroup } from "react-bootstrap"
 
 const ContactPage = () => {
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
-  const [message, setMessage] = useState("")
-  const [submission, setSubmission] = useState()
   return (
     <Layout>
       <SEO title="Contact" />
       <Row
-        style={{ marginTop: "8em" }}
-        className="w-75 mx-auto d-flex justify-content-center"
+        id="contact-row"
+        className="w-75 mx-auto mb-4 d-flex justify-content-center"
       >
         <Col
           xs={12}
           md={3}
-          className="d-flex justify-content-center align-items-center mr-5 p-3"
+          className="d-flex justify-content-center align-items-center mr-xs-0 mr-md-5 p-3"
         >
           <div>
-            <h5>Contact Us</h5>
+            <h5 className="font-weight-bold">Contact Us</h5>
             <p>We want to hear from you!</p>
             <hr />
             <ul className="hours">
-              <li>Mon - Thurs: 11:00AM - 9:00PM</li>
-              <li>Fri - Sat: 11:00AM - 10:00PM</li>
-              <li>Sun: 12:00PM - 9:00PM</li>
+              <li>
+                <span className="font-weight-bold">Mon - Thurs:</span> 11:00AM -
+                9:00PM
+              </li>
+              <li>
+                <span className="font-weight-bold">Fri - Sat:</span> 11:00AM -
+                10:00PM
+              </li>
+              <li>
+                <span className="font-weight-bold">Sun:</span> 12:00PM - 9:00PM
+              </li>
               <hr />
-              <li>555-555-5555</li>
+              <li className="font-weight-bold">&#40;555&#41;-555-5555</li>
+              <hr />
             </ul>
           </div>
         </Col>
-        <Col xs={12} md={7} className="ml-5">
+        <Col xs={12} md={7} className="ml-2">
           <Form
             name="contact v1"
             method="post"
             data-netlify="true"
-            onSubmit="submit"
-            // onSubmit={e => {
-            //   e.preventDefault()
-            //   const user = { name, email, message }
-            //   setSubmission(user)
-            //   console.log(submission)
-            //   setName("")
-            //   setEmail("")
-            //   setMessage("")
-            // }}
+            data-netlify-recaptcha="true"
           >
             <input type="hidden" name="form-name" value="contact v1" />
             <Form.Group>
-              <Form.Label>Name</Form.Label>
+              <Form.Label className="font-weight-bold">Name</Form.Label>
               <Form.Control
                 type="text"
                 name="name"
@@ -64,7 +60,9 @@ const ContactPage = () => {
             </Form.Group>
 
             <Form.Group>
-              <Form.Label>Email Address</Form.Label>
+              <Form.Label className="font-weight-bold">
+                Email Address
+              </Form.Label>
               <Form.Control
                 type="email"
                 name="email"
@@ -75,7 +73,7 @@ const ContactPage = () => {
             </Form.Group>
 
             <Form.Group>
-              <Form.Label>Message</Form.Label>
+              <Form.Label className="font-weight-bold">Message</Form.Label>
               <Form.Control
                 as="textarea"
                 required
@@ -88,7 +86,7 @@ const ContactPage = () => {
               <div data-netlify-recaptcha="true"></div>
             </FormGroup>
 
-            <Button className="btn btn-dark" type="submit">
+            <Button className="btn btn-dark" type="submit" id="contact-submit">
               Submit
             </Button>
           </Form>

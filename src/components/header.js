@@ -5,7 +5,10 @@ import { Navbar } from "react-bootstrap"
 
 const Header = () => (
   <>
-    <Navbar expand="sm" className=" d-flex justify-content-center pb-0 menu">
+    <Navbar
+      expand="sm"
+      className=" d-flex justify-content-center pb-0 pt-3 menu nav-bar"
+    >
       <Navbar.Toggle aria-controls="responsive-navbar-nav" id="toggle" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <ul className="nav-links">

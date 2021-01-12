@@ -11,8 +11,22 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Container>
       <Row>
-        <Col className="d-flex mt-3 mb-3 justify-content-center">
-          <h1>Habte Eats</h1>
+        <Col className="d-flex mt-3  justify-content-center">
+          <h1 id="main-heading">Habte Eats</h1>
+        </Col>
+      </Row>
+      <Row
+        className="mb-2 d-flex justify-content-center w-75 mx-auto "
+        id="address"
+      >
+        <Col md={2}>
+          <span>555-555-5555</span>
+        </Col>
+        <Col md={3}>
+          <span> 101 Main St, Baltimore MD</span>
+        </Col>
+        <Col md={3}>
+          <span>Carryout & Delivery Available</span>
         </Col>
       </Row>
       <Row className="mb-5 bg-dark">

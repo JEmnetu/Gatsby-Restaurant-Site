@@ -11,7 +11,7 @@ const MenuPage = () => (
     <Container>
       <Row>
         <Col className="d-flex mt-3 mb-4 justify-content-center">
-          <h1>Our Menu</h1>
+          <h1 className="font-italic">Our Menu</h1>
         </Col>
       </Row>
       <Row className="mb-5">
@@ -25,21 +25,21 @@ const MenuPage = () => (
             <li>
               <h5>Cheese Pizza</h5>
 
-              <span>$10.99</span>
+              <span>$10.95</span>
             </li>
             <li>
               <h5>Pepperoni Pizza</h5>
-              <span>$11.99</span>
+              <span>$11.95</span>
             </li>
             <li>
               <h5>Veggie Pizza</h5>
 
-              <span>$11.99</span>
+              <span>$12.95</span>
             </li>
             <li>
               <h5>Supreme Pizza</h5>
 
-              <span>$12.99</span>
+              <span>$12.95</span>
             </li>
           </ul>
         </Col>
@@ -60,11 +60,11 @@ const MenuPage = () => (
             </li>
             <li>
               <h5>Sausage, Peppers, & Onions</h5>
-              <span>$9.99</span>
+              <span>$9.95</span>
             </li>
             <li>
               <h5>Shrimp Alfredo</h5>
-              <span>$10.99</span>
+              <span>$10.95</span>
             </li>
           </ul>
         </Col>
@@ -77,24 +77,24 @@ const MenuPage = () => (
             </li>
             <li>
               <h5>Garden Salad</h5>
-              <span>$6.99</span>
+              <span>$6.95</span>
             </li>
             <li>
               <h5>Cobb Salad</h5>
-              <span>$7.99</span>
+              <span>$7.95</span>
             </li>
             <li>
               <h5>Greek Salad</h5>
-              <span>$7.99</span>
+              <span>$7.95</span>
             </li>
             <li>
               <h5>Antipasta Salad</h5>
-              <span>$7.99</span>
+              <span>$7.95</span>
             </li>
           </ul>
         </Col>
       </Row>
-      <Row>
+      <Row id="second-row">
         <Col xs={12} md={4} className="bg-light pt-1">
           <ul className="food-menu">
             <li
@@ -104,19 +104,19 @@ const MenuPage = () => (
             </li>
             <li>
               <h5>Cheesesteak</h5>
-              <span>$6.99</span>
+              <span>$6.95</span>
             </li>
             <li>
               <h5>Chicken Cheesesteak</h5>
-              <span>$7.99</span>
+              <span>$7.95</span>
             </li>
             <li>
               <h5>Chicken Parmesan</h5>
-              <span>$7.99</span>
+              <span>$7.95</span>
             </li>
             <li>
               <h5>Tuna Sub</h5>
-              <span>$7.99</span>
+              <span>$7.95</span>
             </li>
           </ul>
         </Col>

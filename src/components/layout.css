@@ -1,77 +1,111 @@
-*{
-
+/* Universal Styles */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Playfair Display", serif;
 }
-body{
+body {
   background-color: rgb(255, 70, 70);
 }
-a:hover{
+a:hover {
   text-decoration: none;
 }
-
- li{
-
+/* Home Page Styles */
+#main-heading {
+  font-family: "Playfair Display", serif;
 }
 
-.menu{
+#address {
+  font-size: 14px;
+  text-align: center;
+}
+
+.nav-bar {
   background-color: black;
 }
 
-.nav-links{
-/* display: flex;
+.nav-links {
+  /* display: flex;
 justify-content: center; */
-margin-left: auto;
-margin-right: auto;
-
-}
-
-.nav-links li{
-  color: white;
-  list-style: none;
-  display: inline;
-  margin-left: 65px;
-  margin-right: 65px
-}
-
-.nav-links li:hover{
-  text-decoration: underline;
-}
-
-#toggle{
-  color: white;
-  background-color: white;
-  text-align: center;
-  margin-bottom: .5em;
   margin-left: auto;
   margin-right: auto;
 }
 
-.header-img{
-  height: 15em;
-  width: 100vw;
+.nav-links li {
+  color: white;
+  list-style: none;
+  display: inline;
+  margin-left: 65px;
+  margin-right: 65px;
+}
+.nav-links a {
+  height: 100%;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+.nav-links a:hover {
+  border-bottom: solid 2px white;
+  border-top: solid 2px white;
 }
 
-.main-desc{
+#toggle {
+  color: white;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-desc {
   font-size: 22px;
+  font-style: italic ;
   text-align: center;
 }
 
-.food-menu li{
+.food-menu li {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1em;
 }
 
-.hours{
+.hours {
   list-style: none;
 }
 
-@media (max-width:576px){
-  .nav-links li{
+.hours li {
+  margin-bottom: 10px;
+}
+
+#contact-row {
+  margin-top: 10em;
+}
+
+@media (max-width: 576px) {
+  .nav-links li {
     display: block;
     text-align: center;
     margin-top: 10px;
+  }
+
+  #contact-row {
+    margin-top: 4em;
+  }
+}
+
+@media (max-width: 767px) {
+  #second-row {
+    margin-bottom: 2em;
+  }
+  #contact-submit {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  #contact-row {
+    margin-top: 4em;
   }
 }
