@@ -19,11 +19,11 @@ const IndexPage = () => (
         className="mb-2 d-flex justify-content-center w-75 mx-auto "
         id="address"
       >
-        <Col md={2}>
-          <span>555-555-5555</span>
-        </Col>
         <Col md={3}>
           <span> 101 Main St, Baltimore MD</span>
+        </Col>
+        <Col md={2}>
+          <span>555-555-5555</span>
         </Col>
         <Col md={3}>
           <span>Carryout & Delivery Available</span>
