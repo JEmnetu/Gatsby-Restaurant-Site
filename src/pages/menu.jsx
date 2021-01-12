@@ -43,7 +43,7 @@ const MenuPage = () => (
             </li>
           </ul>
         </Col>
-        <Col xs={12} md={4} className="bg-light pl-1 pt-1">
+        <Col xs={12} md={4} className="bg-light pt-1">
           <ul className="food-menu">
             <li
               style={{ justifyContent: "center", textDecoration: "underline" }}
@@ -68,7 +68,7 @@ const MenuPage = () => (
             </li>
           </ul>
         </Col>
-        <Col xs={12} md={4} className="bg-light pl-1 pt-1">
+        <Col xs={12} md={4} className="bg-light pt-1">
           <ul className="food-menu">
             <li
               style={{ justifyContent: "center", textDecoration: "underline" }}
@@ -120,7 +120,7 @@ const MenuPage = () => (
             </li>
           </ul>
         </Col>
-        <Col xs={12} md={4} className="bg-light pl-1 pt-1">
+        <Col xs={12} md={4} className="bg-light  pt-1">
           <ul className="food-menu">
             <li
               style={{ justifyContent: "center", textDecoration: "underline" }}
@@ -145,7 +145,7 @@ const MenuPage = () => (
             </li>
           </ul>
         </Col>
-        <Col xs={12} md={4} className="bg-light pl-1 pt-1">
+        <Col xs={12} md={4} className="bg-light pt-1">
           <ul className="food-menu">
             <li
               style={{ justifyContent: "center", textDecoration: "underline" }}
